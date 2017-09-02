@@ -14,7 +14,7 @@ export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
-export PS1=$LIGHT_GRAY""'$(
+export PS1='$(
     if [[ $(__git_ps1) =~ \*\)$ ]]
     # a file has been modified but not added
     then echo "'$YELLOW'"$(__git_ps1 " (%s)")
@@ -23,9 +23,4 @@ export PS1=$LIGHT_GRAY""'$(
     then echo "'$MAGENTA'"$(__git_ps1 " (%s)")
     # the state is clean, changes are commited
     else echo "'$CYAN'"$(__git_ps1 " (%s)")
-    fi)'$BLUE" \w"$GREEN"\n => "
-
-
-## Alias..es ##
-alias ll='ls -lah'
-alias gg='git status -s'
+    fi)'$BLUE" \w"$LIGHT_GRAY": \n => $YELLOW"
