@@ -1,0 +1,29 @@
+[user]
+	email = hinchy@gmail.com
+	name = Jason Hinchcliffe
+[alias]
+    a = !git track && git add -p
+    add-staged = "!git diff --name-only --cached | xargs git add" # Add new changes to files that are already staged
+    b = branch
+    ca = commit --amend
+    car = commit --amend --no-edit
+    cf = commit --fixup
+    clear = !git add . && git reset --hard
+    co = checkout
+    conflicts = "!git ls-files -u | awk '{print $4}' | sort -u"
+    copysha = "!git rev-parse HEAD | tr -d '\n' | pbcopy"
+    df = diff --word-diff --color-words
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    master = checkout master
+    mup = !git checkout master && git pull && git checkout - # Master up - merge in remote master then return to current branch
+    mupr = !git mup && git rebase master # Master up and rebase - replay changes on top of current master
+    purge = "!git checkout master && git pull && git branch --merged | grep -Ev 'master' | xargs -n 1 git branch -d" # Delete all branches that have been merged
+    s = status
+    track = "!git status --untracked=all --porcelain | grep -e '^??' | colrm 1 3 | xargs git add -N" # Add untracked files to the index. Really useful when combined with git add -p, as it includes all files in the interactive staging session. Courtesty of Dan.
+    uncommit = reset --soft HEAD^
+[push]
+    default = upstream
+[fetch]
+    prune = true
+[url "git@github.com:"]
+    insteadOf = https://github.com/
