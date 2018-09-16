@@ -1,0 +1,11 @@
+alias g='git'
+alias gcm='git commit -m'
+alias gap='git add -p'
+alias gco='git checkout'
+alias gcm='git checkout master'
+alias gl='pretty-git-log'
+alias gs='git status --untracked-files=all'
+
+function pretty-git-log() {
+  git log -M40 --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(green bold)- %an %C(black bold)%cd (%cr)%Creset' --abbrev-commit --date=short "$@"
+}
