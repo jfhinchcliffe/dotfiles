@@ -1,6 +1,3 @@
-# Set VS Code as the default editor
-editor = '/Applications/Visual Studio Code.app/Contents/MacOS/Electron' -w
-
 # Aliases
 source ~/dotfiles/aliases/general
 source ~/dotfiles/aliases/git
