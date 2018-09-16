@@ -1,4 +1,5 @@
 alias g='git'
+alias gc='git commit'
 alias gap='git add -p'
 alias gco='git checkout'
 alias gcm='git checkout master'

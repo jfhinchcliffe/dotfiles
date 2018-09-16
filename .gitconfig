@@ -1,0 +1,13 @@
+[user]
+	email = hinchy@gmail.com
+	name = Jason Hinchcliffe
+[core]
+    excludesfile = ~/.gitignore
+[push]
+    default = upstream
+[fetch]
+    prune = true
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[core]
+	editor = code --wait
