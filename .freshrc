@@ -1,0 +1,9 @@
+# Things Fresh apparently needs
+fresh freshshell/fresh bin/fresh --bin
+
+# fresh shell/zsh/zshrc --file=~/.zshrc
+# All terminal setups
+fresh env/aliases.sh
+fresh zsh/zsh.sh
+fresh env/langs.sh
+fresh env/envs.sh
