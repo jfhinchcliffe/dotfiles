@@ -4,7 +4,7 @@
 alias refresh_dotfiles="source ~/.fresh/build/shell.sh"
 
 # Work specific
-## Oft used prjects
+## Oft used projects
 alias gotomp="cd ~/Sites/marketplacer"
 alias gotoint="cd ~/Sites/integrations"
 alias gotoket="cd ~/Sites/ketplacer"
