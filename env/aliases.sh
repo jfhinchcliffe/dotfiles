@@ -4,6 +4,7 @@
 alias refresh_dotfiles="source ~/.fresh/build/shell.sh"
 
 # Work specific
+alias get_to_work="gotomp && bash ~/custom_scripts/start_me_up.sh $1"
 ## Oft used projects
 alias gotomp="cd ~/Sites/marketplacer"
 alias gotoint="cd ~/Sites/integrations"
