@@ -1,5 +1,7 @@
 # Aliases
 
+# Go to Fresh directory to update files
+alias edit_dotfiles= "cd ~/.dotfiles"
 # re-source from fresh after updating dotfiles
 alias refresh_dotfiles="source ~/.fresh/build/shell.sh"
 
